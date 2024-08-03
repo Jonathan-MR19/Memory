@@ -239,7 +239,7 @@ input[type="radio"]{
 }
 
 .lloro {
-    visibility: visible;
+    visibility: hidden;
 }
 
 #step2:checked ~ .memory-ball{
