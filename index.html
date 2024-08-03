@@ -34,14 +34,26 @@
         😻 I LOVE YOU 💖
       </div>
       <audio
+        id="audioPlayer"
         autoplay
         loop
         class="lloro"
-        src="audio/meCambiaste.mp3"
-        type="audio/mp3"
+        src="./audio/meCambiaste.mp3"
       >
         Tu navegador no soporta el elemento de audio.
       </audio>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("audioPlayer");
+
+        document.body.addEventListener("click", function () {
+          if (audio.paused) {
+            audio.play();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
